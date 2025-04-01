@@ -33,7 +33,7 @@
         <li>
             <strong><%= t.getTitre() %></strong> - 
             <%= t.getDescription() %> (Échéance: <%= t.getDateEcheanceFormattee() %>)
-            <% if (t.isTerminee()) { %> ✅ Terminée <% } else { %>
+            <% if (t.isTerminee()) { %> Terminée <% } else { %>
                 <a href="lister.jsp?terminer=<%=i%>">Marquer comme terminée</a>
             <% } %> |
             <a href="lister.jsp?supprimer=<%=i%>">Supprimer</a>
